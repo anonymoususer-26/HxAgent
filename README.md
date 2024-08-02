@@ -21,9 +21,9 @@ HxAgent is an iterative LLM-based agent planning approach for web automation tha
 * [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Setup](#setup)
-  - [Dataset](#dataset)
+  - [Datasets](#dataset)
     - [MiniWoB++](#miniwob)
-    - [Real world application](#real-world-application)
+    - [Real-world application dataset](#real-world-application-dataset)
   - [Usage Guide](#usage-guide)
 * [Disclaimer](#disclaimer)
 
@@ -81,8 +81,8 @@ The Miniwob dataset can be found under `vendor/miniwob.tar.gz`, you can run the 
 ```
 python prepare.py
 ```
-#### Real world application
-The real world application dataset can be found under `vendor/real_world_application.json`. You can reference the schema below when using the dataset:
+#### Real-world application dataset
+The real-world application dataset can be found under `vendor/real_world_application.json`. You can reference the schema below when using the dataset:
 
 | key           | type  | description                                                                |
 |---------------|-------|----------------------------------------------------------------------------|
@@ -131,12 +131,12 @@ Here's an replicated command to run for each research questions:
 | ---                                               | :----:           | :---:                                                                 |
 | **(RQ1)** Effectiveness on sequences of actions generation (MiniWoB++) | III+IV       |  ```python main.py --dataset=miniwob```  |
 | **(RQ1)** Effectiveness on sequences of actions generation (MiniWoB++) of *Li et al.* | IV       | ```python main.py --dataset=miniwob --mode=5 --task_id=choose-date``` (change `--task_id` to *book-flight*, *flight.Alaska*, *flight.AA* for remaining tasks)   |
-| **(RQ1)** Effectiveness on sequences of actions generation (Realworld) | V       | ```python main.py --dataset=real_world_application --eval_instance=10```   |
-| **(RQ1)** Effectiveness on sequences of actions generation (Realworld) of *Li et al.* | V       | ```python main.py --dataset=real_world_application --mode=5 --eval_instance=10```   |
+| **(RQ1)** Effectiveness on sequences of actions generation (Real-world) | V       | ```python main.py --dataset=real_world_application --eval_instance=10```   |
+| **(RQ1)** Effectiveness on sequences of actions generation (Real-world) of *Li et al.* | V       | ```python main.py --dataset=real_world_application --mode=5 --eval_instance=10```   |
 | **(RQ2)** Experience Analysis | -       | ```python main.py --dataset=miniwob```, if you already ran this, navigate to `./log/session/<task_id>_training.xlsx` for the results.   |
 | **(RQ2)** Ablation Study | VI       | ```python main.py --dataset=miniwob --mode=2``` (change `--mode` to *3*, *4* for the remaining ablation)   |
 |                                                   |         |
 
 ## Disclaimer
 The code was released solely for research purposes, with the goal of making the web more accessible via language technologies. 
-The authors are strongly against any potentially harmful use of the data or technology by any party.
+The data are provided “as is”, and users assume any possible risks related to any use of the data.
