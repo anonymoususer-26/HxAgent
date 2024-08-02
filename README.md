@@ -75,7 +75,7 @@ python prepare.py
 CHROME_USER_DATA_DIR=<your data dir>
 ```
 
-### Dataset
+### Datasets
 #### MiniwoB++
 The Miniwob dataset can be found under `vendor/miniwob.tar.gz`, you can run the following script to automatically extract the dataset to the `./dataset` directory.
 ```
