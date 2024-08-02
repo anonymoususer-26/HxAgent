@@ -21,7 +21,7 @@ HxAgent is an iterative LLM-based agent planning approach for web automation tha
 * [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Setup](#setup)
-  - [Datasets](#dataset)
+  - [Datasets](#datasets)
     - [MiniWoB++](#miniwob)
     - [Real-world application dataset](#real-world-application-dataset)
   - [Usage Guide](#usage-guide)
