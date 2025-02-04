@@ -8,7 +8,7 @@
 </p>
 
 
-This repo holds the code, dataset and instructions for the paper __Toward Generation of Test Cases from Task Descriptions via History-aware Planning__ @ICSE 2025.
+This repo holds the code, dataset and instructions for the paper __Toward Generation of Test Cases from Task Descriptions via History-aware Planning__.
 
 ## HxAgent
 HxAgent is an iterative LLM-based agent planning approach for web automation that determines the next action based on observations of current content, short-term memory of previous states and actions, and long-term experience with (in)correct sequences.
