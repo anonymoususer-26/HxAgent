@@ -5,128 +5,36 @@ ORDER = ['first', 'second', 'third']
 GENERAL_SEARCH_KEY = [
     "funny cat videos",
     "smartphone review",
-    "guitar tutorial",
-    "makeup tutorial",
-    "travel vlog",
-    "life hacks",
-    "coding for beginners",
-    "documentary",
     "workout routine",
     "meditation",
-    "popular music",
-    "historical events",
-    "science experiments",
     "cooking recipes",
     "coding challenges",
-    "product review",
-    "travel guide",
-    "learn a new language",
-    "DIY projects",
     "coding interview",
-    "sleep music",
     "coding bootcamp",
-    "funny compilation",
+    "data visualization with Python",
+    "data visualization with JavaScript",
+    "data analysis with Python",
+    "machine learning for beginners",
+    "data science projects for beginners",
+    "machine learning projects for beginners",
+    "data science competitions",
+    "machine learning competitions",
     "programming language comparison",
-    "coding tutorials for kids",
     "software development tutorials",
-    "data science lectures",
-    "machine learning course",
-    "artificial intelligence explained",
-    "career advice",
-    "motivation speech",
     "coding challenges for beginners",
-    "software development life cycle",
-    "agile methodology explained",
-    "version control systems",
-    "cloud computing explained",
-    "cybersecurity awareness",
-    "ethical hacking demonstration",
     "web development tutorial",
     "game development tutorial",
-    "mobile app development tutorial",
     "software design principles",
-    "coding best practices",
-    "clean code examples",
-    "functional programming concepts",
-    "object-oriented programming concepts",
     "coding interview questions and answers",
     "data structures and algorithms",
-    "big data analytics explained",
-    "natural language processing explained",
-    "computer vision explained",
-    "blockchain technology explained",
-    "coding for social good",
     "open source projects",
     "contributing to open source",
     "coding communities",
-    "software development career path",
-    "freelancing for developers",
-    "remote work for developers",
-    "work-life balance for developers",
-    "coding humor",
-    "programmer memes",
-    "coding life hacks",
     "developer productivity tips",
-    "coding challenges for experts",
-    "algorithmic thinking explained",
     "software design patterns",
-    "testing in software development",
-    "continuous integration and continuous delivery",
-    "devops explained",
-    "infrastructure as code",
-    "cloud platforms for developers",
-    "serverless computing explained",
-    "microservices architecture explained",
-    "api development tutorial",
     "front-end development tutorial",
-    "back-end development tutorial",
     "full-stack development tutorial",
     "responsive web design tutorial",
-    "user interface design principles",
-    "user experience design principles",
-    "front-end frameworks",
-    "back-end frameworks",
-    "web development tools",
-    "testing frameworks for web development",
-    "deployment strategies for web applications",
-    "web security best practices",
-    "coding for accessibility",
-    "progressive web applications explained",
-    "single-page applications explained",
-    "jamstack architecture explained",
-    "ecommerce development tutorial",
-    "content management systems",
-    "web scraping techniques",
-    "data visualization with Python",
-    "data visualization with JavaScript",
-    "data storytelling techniques",
-    "machine learning libraries",
-    "deep learning frameworks",
-    "natural language processing libraries",
-    "computer vision libraries",
-    "data analysis with Python",
-    "data science with R",
-    "data mining techniques",
-    "machine learning for beginners",
-    "deep learning for beginners",
-    "artificial intelligence applications",
-    "natural language processing applications",
-    "computer vision applications",
-    "data science projects for beginners",
-    "machine learning projects for beginners",
-    "deep learning projects for beginners",
-    "data science competitions",
-    "machine learning competitions",
-    "artificial intelligence research",
-    "the future of artificial intelligence",
-    "the ethics of artificial intelligence",
-    "coding for good projects",
-    "using technology to solve problems",
-    "coding for social impact",
-    "the future of coding",
-    "coding trends to watch",
-    "emerging technologies in coding",
-    "the impact of coding on society",
 ]
 YOUTUBE_CHANNEL = [
     "PewDiePie",
@@ -396,7 +304,6 @@ CAPTION = [
     "You're the best!"
 ]
 YOUTUBE_LANGUAGE = [
-    "English",
     "Spanish",
     "French",
     "German",
@@ -1400,6 +1307,29 @@ SOFSearchTerms = [
     "python career",
 ]
 
+FROM_DESTINATION = [
+    "New York City", "London", "Paris", "Tokyo", "Los Angeles", "Chicago", "Dubai", "Singapore", "Hong Kong", "Sydney", "Bangkok", "Seoul", "Mumbai", "Delhi", "Shanghai", "Beijing", "Frankfurt", "Amsterdam", "Madrid", "Rome", "Toronto", "Vancouver", "Montreal", "Mexico City", "Sao Paulo", "Buenos Aires"
+]
+
+TO_DESTINATION = [
+    "Johannesburg", "Cairo", "Istanbul", "Kuala Lumpur", "Jakarta", "Manila", "Melbourne", "Brisbane", "Perth", "Auckland", "Wellington", "Oslo", "Stockholm", "Copenhagen", "Helsinki", "Reykjavik", "Dublin", "Edinburgh", "Glasgow", "Berlin", "Munich", "Vienna", "Zurich"
+]
+
+FROM_DATE = [
+    "January 10th", "February 15th"
+]
+
+TO_DATE = [
+    "February 15th", "February 25th"
+] 
+
+EXPEDIA_TAB = [
+    "Resort", "Spa", "Cabin", "Hot tub", "Pet friendly"
+]
+
+INSTAGRAM_PROFILE = [
+    "edissprogramme"
+]
 
 popular_task_factories = [
     TaskFactory('youtube_1', 'https://youtube.com', 'Youtube', 'Search "{}" and like the first video', GENERAL_SEARCH_KEY),
@@ -1407,12 +1337,12 @@ popular_task_factories = [
     TaskFactory('youtube_3', 'https://youtube.com', 'Youtube', 'Go to Watch later section and click the {} video', ORDER),
     TaskFactory('youtube_4', 'https://youtube.com', 'Youtube', 'Change the site\'s current language setting to {}', YOUTUBE_LANGUAGE),
     TaskFactory('youtube_5', 'https://youtube.com', 'Youtube', 'Navigate to {} tab', YOUTUBE_TAB),
-    TaskFactory('linkedin_1', 'https://linkedin.com', 'Linkedin', 'Login with username {} and password {}', ['<>@gmail.com'], ['<>']),
+    TaskFactory('linkedin_1', 'https://linkedin.com', 'Linkedin', 'Login with username {} and password {}', ['abc@gmail.com'], ['123456789']),
     TaskFactory('linkedin_2', 'https://linkedin.com', 'Linkedin', 'Search for {} jobs and click on {} result', JOB_TITLE, ORDER),
     TaskFactory('linkedin_3', 'https://linkedin.com', 'Linkedin', 'Search for a person name {} and click connect or follow', ENTREPRENEUR),
     TaskFactory('linkedin_4', 'https://linkedin.com', 'Linkedin', 'Write a post with caption "{}"', CAPTION),
     TaskFactory('linkedin_5', 'https://linkedin.com', 'Linkedin', 'Search the job {} and Save the first job', JOB_TITLE),
-    TaskFactory('facebook_1', 'https://facebook.com', 'Facebook', 'Login with username {} and password {}', ['<>@gmail.com'], ['<>']),
+    TaskFactory('facebook_1', 'https://facebook.com', 'Facebook', 'Login with username {} and password {}', ['abc@gmail.com'], ['123456789']),
     TaskFactory('facebook_2', 'https://facebook.com', 'Facebook', 'Update status with "{}"', CAPTION),
     TaskFactory('facebook_3', 'https://facebook.com', 'Facebook', 'Switch to {} tab', FACEBOOK_TAB),
     TaskFactory('facebook_4', 'https://facebook.com', 'Facebook', 'Search {} page and follow them', CELEBRITY),
@@ -1433,9 +1363,14 @@ popular_task_factories = [
     TaskFactory('amazon_5', 'https://amazon.com', 'Amazon', 'Change the website language to {}', AMAZON_LANGUAGES),
     TaskFactory('stackoverflow_1', 'https://stackoverflow.com', 'Stack Overflow', 'Navigate to Discussion, create a discussion with title {}, please generate related tag and content (content must be a paragraph)', QUESTIONS),
     TaskFactory('stackoverflow_2', 'https://stackoverflow.com', 'Stack Overflow', 'Search for "{}" and click {} to the first result', SOFSearchTerms, ['upvote', 'downvote']),
-    TaskFactory('stackoverflow_3', 'https://stackoverflow.com', 'Stack Overflow', 'Ask a question with title {}, please generate the details of the problem for input, describe what we\'ve tried for input, but don\t generate any tag and send the question to review', QUESTIONS),
-    TaskFactory('stackoverflow_4', 'https://stackoverflow.com', 'Stack Overflow', 'Navigate to "Companies", search "{}" and click follow the first company', COMPANY),
+    TaskFactory('stackoverflow_3', 'https://stackoverflow.com', 'Stack Overflow', 'Ask a question with title {}, please generate the details of the problem for input, describe what we have tried for input, but do not generate any tag and send the question to review', QUESTIONS),
+    TaskFactory('stackoverflow_4', 'https://stackoverflow.com', 'Stack Overflow', 'Navigate to "Com                                                                    panies", search "{}" and click follow the first company', COMPANY),
     TaskFactory('stackoverflow_5', 'https://stackoverflow.com', 'Stack Overflow', 'Go to setting to edit profile and change Display name to {}', NAME),
+    TaskFactory('expedia_1', 'https://www.expedia.com', 'Expedia', 'Search for a one way flight from {} to {} on {} and click the first result	', FROM_DESTINATION, TO_DESTINATION, FROM_DATE),
+    TaskFactory('expedia_2', 'https://www.expedia.com', 'Expedia', 'Search for a stay in {} from {} to {}', FROM_DESTINATION, FROM_DATE, TO_DATE),
+    TaskFactory('expedia_3', 'https://www.expedia.com', 'Expedia', 'Search for a round trip flight from {} to {}, departure date {}, return date {}', FROM_DESTINATION, TO_DESTINATION, FROM_DATE, TO_DATE),
+    TaskFactory('expedia_4', 'https://www.expedia.com', 'Expedia', 'Click on {} and select the {} result', EXPEDIA_TAB, ORDER),
+    TaskFactory('expedia_5', 'https://www.expedia.com', 'Expedia', 'Search for Things to do in {} from {} to {} and click the first result', FROM_DESTINATION, FROM_DATE, TO_DATE),
 ]
 
 def get_popular_task_factory_by_id(task_id):
